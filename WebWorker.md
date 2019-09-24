@@ -113,11 +113,12 @@ importScripts('scripts1.js', 'scripts2.js')
 Worker() 构造函数返回一个 Worker 线程对象, 用来提供主线程操作的 Worker. Worker 线程对象的属性和方法如下
 
 ```
-Worker.onmessage: 指定 message 事件的监听函数, 发送过来的数据在 Event.data 属性中
-Worker.onerror: 指定 error 事件的监听函数, Worker 加载或执行过程出现的异常和错误
-Worker.postMessage(): 向 Worker 线程发送消息
-Worker.terminate(): 关闭 Worker 线程
-Worker.onmessageerror: 指定 messageerror 事件的监听函数.发送过来的数据无法序列化成字符串时会触发该事件
+Worker
+  .onmessage: 指定 message 事件的监听函数, 发送过来的数据在 Event.data 属性中
+  .onerror: 指定 error 事件的监听函数, Worker 加载或执行过程出现的异常和错误
+  .postMessage(): 向 Worker 线程发送消息
+  .terminate(): 关闭 Worker 线程
+  .onmessageerror: 指定 messageerror 事件的监听函数.发送过来的数据无法序列化成字符串时会触发该事件
 ```
 
 2. Worker 线程
@@ -127,10 +128,11 @@ Web Worker 有自己的全局对象, 不是主线程的`window`,而是专门为 
 Worker 线程有自己的全局属性和方法:
 
 ```
-self.name: Worker 的名字, 该属性只读, 由构造函数指定
-self.onmessage: 指定 message 事件的监听函数
-self.postMessage: 向产生这个 Worker 线程发送消息
-self.close(): 关闭 Worker 线程
-self.onmessageerror: 指定 messageerror 事件的监听函数, 发送过来的数据无法序列化成字符串时会触发该事件
-self.importScripts(): 加载 Js 脚本
+self
+  .name: Worker 的名字, 该属性只读, 由构造函数指定
+  .onmessage: 指定 message 事件的监听函数
+  .postMessage: 向产生这个 Worker 线程发送消息
+  .close(): 关闭 Worker 线程
+  .onmessageerror: 指定 messageerror 事件的监听函数, 发送过来的数据无法序列化成字符串时会触发该事件
+  .importScripts(): 加载 Js 脚本
 ```

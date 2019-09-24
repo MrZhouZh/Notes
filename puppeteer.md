@@ -2,6 +2,8 @@
 
 [Github address](https://github.com/GoogleChrome/puppeteer/blob/master/README.md)
 
+[返回首页](./README.md)
+
 ###### [API](https://github.com/GoogleChrome/puppeteer/blob/v1.20.0/docs/api.md) | [FAQ](#faq) | [Contributing](https://github.com/GoogleChrome/puppeteer/blob/master/CONTRIBUTING.md) | [Troubleshooting](https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md)
 
 > Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the [DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). Puppeteer runs [headless](https://developers.google.com/web/updates/2017/04/headless-chrome) by default, but can be configured to run full (non-headless) Chrome or Chromium.
