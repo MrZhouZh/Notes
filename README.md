@@ -8,6 +8,8 @@ This project is my organized notes and documents. Good memory is better than bad
 
 [Algorithm](./algorithm.md)
 
+[Puppeteer](./puppeteer.md)
+
 To be continued...
 
 
