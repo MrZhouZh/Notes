@@ -1,5 +1,7 @@
 ## Study notes
 
+1. [WebWorker](./WebWorker.md)
+
 To be continued...
 
 [link](https://mrzhouzh.github.io/Notes/)
