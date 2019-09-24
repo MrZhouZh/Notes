@@ -2,11 +2,14 @@
 
 This project is my organized notes and documents. Good memory is better than bad writing.This is the [link address](https://mrzhouzh.github.io/Notes/)
 
-1. [WebWorker](./WebWorker.md)
+## List
+
+[WebWorker](./WebWorker.md)
+
+[Algorithm](./algorithm.md)
 
 To be continued...
 
-[link](https://mrzhouzh.github.io/Notes/)
 
 ## Welcome to GitHub Pages
 
