@@ -1,5 +1,7 @@
 ## Study notes
 
+This project is my organized notes and documents. Good memory is better than bad writing.This is the [link address](https://mrzhouzh.github.io/Notes/)
+
 1. [WebWorker](./WebWorker.md)
 
 To be continued...
