@@ -4,7 +4,7 @@
 
 [返回首页](./README.md)
 
-[前言](#前言) | [基本用法](#基本用法) | [API](#API)
+[前言](#前言) | [基本用法](#基本用法) | [API](#api)
 
 ## 前言
 
@@ -108,7 +108,7 @@ importScripts('scripts1.js', 'scripts2.js')
 ```
 
 
-## API
+## api
 
 ### 主线程
 
