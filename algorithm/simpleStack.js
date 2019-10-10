@@ -1,4 +1,7 @@
-// 构造函数 + 原型链
+/**
+ * Stack(基于数组实现)
+ * 构造函数 + 原型链
+ */
 function Stack() {
   this.dataStore = []
   this.top = 0
@@ -46,7 +49,10 @@ newStack.pop()
 console.log(newStack.dataStore)
 console.log(newStack.size())
 
-// 构造函数
+/**
+ * Stack(基于数组实现)
+ * 构造函数
+ */
 function Stack2() {
   this.dataStore = []
   this.top = 0
@@ -85,9 +91,10 @@ newStack2.push(2)
 newStack2.push(3)
 console.log(newStack2)
 
-
-// demo x进制转化
-function divideBy2(decNumber, base) {
+/**
+ * 栈的应用之 x 进制转换
+ */
+function hexadecimal(decNumber, base) {
   let remStack = new Stack()
     , rem
     , binaryString = ''
@@ -106,6 +113,6 @@ function divideBy2(decNumber, base) {
   return binaryString
 }
 
-console.log(divideBy2(520, 2))
-console.log(divideBy2(520, 8))
-console.log(divideBy2(1231, 16))
+console.log(hexadecimal(520, 2))
+console.log(hexadecimal(16, 8))
+console.log(hexadecimal(255, 16))

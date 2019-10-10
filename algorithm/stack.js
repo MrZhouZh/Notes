@@ -1,5 +1,5 @@
 /**
- * Stack
+ * Stack(基于链表的实现)
  */
 class Node {
   constructor(element) {
@@ -46,9 +46,11 @@ class StackBasedLinkedList {
 }
 
 // Test
-const newStack = new StackBasedLinkedList()
-newStack.push(1)
-newStack.push(2)
-newStack.push(3)
+// const newStack = new StackBasedLinkedList()
+// newStack.push(1)
+// newStack.push(2)
+// newStack.push(3)
 
-console.log(newStack.display())
+// console.log(newStack)
+
+exports.CreatedStack = StackBasedLinkedList
