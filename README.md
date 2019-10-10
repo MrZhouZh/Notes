@@ -10,6 +10,8 @@ This project is my organized notes and documents. Good memory is better than bad
 
 [Puppeteer](./puppeteer.md)
 
+[Sass](./sass.md)
+
 To be continued...
 
 
