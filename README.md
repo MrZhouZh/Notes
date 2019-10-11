@@ -12,6 +12,8 @@ This project is my organized notes and documents. Good memory is better than bad
 
 [Sass](./sass.md)
 
+[MySQL](./Mysql.md)
+
 To be continued...
 
 
