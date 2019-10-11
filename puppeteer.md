@@ -45,7 +45,7 @@ npm i puppeteer-core
 # or "yarn add puppeteer-core"
 ```
 
-See [puppeteer vs puppeteer-core](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteer-vs-puppeteer-core).
+[puppeteer vs puppeteer-core](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#puppeteer-vs-puppeteer-core).
 
 ### 使用
 
@@ -99,7 +99,7 @@ const puppeteer = require('puppeteer');
 node hn.js
 ```
 
-更多使用方法戳这→: [`Page.pdf()`](https://github.com/GoogleChrome/puppeteer/blob/v1.20.0/docs/api.md#pagepdfoptions).
+更多用法戳这→: [`Page.pdf()`](https://github.com/GoogleChrome/puppeteer/blob/v1.20.0/docs/api.md#pagepdfoptions).
 
 **执行脚本**
 
