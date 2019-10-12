@@ -1,0 +1,51 @@
+```scss
+$--sm: 768px !default;
+$--md: 992px !default;
+$--lg: 1200px !default;
+$--xl: 1920px !default;
+
+$--breakpoints: (
+  'xs' : (max-width: $--sm - 1),
+  'sm' : (min-width: $--sm),
+  'md' : (min-width: $--md),
+  'lg' : (min-width: $--lg),
+  'xl' : (min-width: $--xl)
+);
+
+
+$--breakpoints-spec: (
+  'xs-only': (max-width: $--sm - 1),
+  'sm-and-up': (min-width: $--sm),
+  'sm-only': (min-width: #{$--sm}) and (max-width: #{$--md - 1}),
+  'sm-and-down': (max-width: $--md - 1),
+  'md-and-up': (min-width: $--md),
+  'md-only': (min-width: #{$--md}) and (max-width: #{$--lg - 1}),
+  'md-and-down': (max-width: $--lg - 1),
+  'lg-and-up': (min-width: $--lg),
+  'lg-only': (min-width: #{$--lg}) and (max-width: #{$--xl - 1}),
+  'lg-and-down': (max-width: $--xl - 1),
+  'xl-only': (min-width: $--xl),
+);
+
+
+@mixin res($key, $map: $--breakpoints) {
+  // 循环断点Map，如果存在则返回
+  @if map-has-key($map, $key) {
+    @media only screen and #{inspect(map-get($map, $key))} {
+      @content;
+    }
+  } @else {
+    @warn "Undefeined points: `#{$map}`";
+  }
+}
+
+.hidden {
+  @each $break-point-name, $value in $--breakpoints-spec {
+    &-#{$break-point-name} {
+      @include res($break-point-name, $--breakpoints-spec) {
+        display: none !important;
+      }
+    }
+  }
+}
+```

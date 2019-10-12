@@ -19,6 +19,11 @@ show databases;
 # 创建数据库
 create database 数据库名称;
 
+# 创建用户授权数据库
+# privileges: 用户的操作权限
+# identified: 
+grant all privileges on 数据库名.* to '用户名'@'host' identified by 'password';
+
 # 删除数据库
 drop database 数据库名称;
 
