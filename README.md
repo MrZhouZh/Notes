@@ -14,6 +14,8 @@ This project is my organized notes and documents. Good memory is better than bad
 
 [MySQL](./Mysql.md)
 
+[Code](./code.md)
+
 To be continued...
 
 
