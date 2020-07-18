@@ -33,7 +33,7 @@
     - 一支独立的团队可以自主完成从产品构思到最终发布的完整流程，有足够的能力独立向客户交付价值，从而可以更高效的工作；
     - 团队凝聚力更高
 
-## 探索过程
+## 发展历程
 
 1. 技术栈的迭代与升级
    - web时代的发展，技术栈层出不穷，三大主流（React/Vue/Angular）框架。随着技术的发展，必然存在持续不断地迭代我们的技术体系，同时也要兼容老项目的运行
@@ -76,9 +76,21 @@
 
 ## 最终成果
 
+*To be Continued..*
+
 <!--
 1. 巨石应用减负
 2. 模块复用
 3. 跨系统开发模式革新
 4. 多团队合作模式优化
 -->
+
+## 参考链接
+
+- [可能是你见过的最完美的微前端解决方案](https://zhuanlan.zhihu.com/p/78362028)
+- [MicroFrontend & MircoServer, Genesis 对远程组件的实践](https://juejin.im/post/5eec1bb6518825657a3e1817)
+
+## 示例链接
+- [single-spa Example](https://react.microfrontends.app/)
+- [feed me](https://demo.microfrontends.com/)
+ 
