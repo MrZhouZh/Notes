@@ -4,6 +4,8 @@ This project is my organized notes and documents. Good memory is better than bad
 
 ## List
 
+[Javascript](./Javascript/readme.md)
+
 [WebWorker](./WebWorker.md)
 
 [Algorithm](./algorithm.md)
