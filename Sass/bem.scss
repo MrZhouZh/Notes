@@ -1,0 +1,112 @@
+$namespace: 'jace';
+$element-separator: '__';
+$modifier-separator: '--';
+$state-prefix: 'is-';
+
+$--color-text-regular: #ccc;
+$--color-primary: #f00;
+
+
+@mixin b($block) {
+  $B: $namespace+'-'+$block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin e($element) {
+  $E: $element !global;
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $element {
+    $currentSelector: #{$currentSelector + "." + $B + $element-separator + $unit + ","};
+  }
+
+  @if hitAllSpecialNestRule($selector) {
+    @at-root {
+      #{$selector} {
+        #{$currentSelector} {
+          @content;
+        }
+      }
+    }
+  } @else {
+    @at-root {
+      #{$currentSelector} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $modifier {
+    $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ","};
+  }
+
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+/*-------------------------------- demo upload --------------------------*/
+@include b(upload) {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  @include e(input) {
+    display: none;
+  }
+
+  @include e(tip) {
+    font-size: 12px;
+    color: $--color-text-regular;
+    margin-top: 7px;
+  }
+
+  iframe {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  /* 照片墙模式 */
+  @include m(picture-card) {
+    background-color: #fbfdff;
+    border: 1px dashed #c0ccda;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 148px;
+    height: 148px;
+    cursor: pointer;
+    line-height: 146px;
+    vertical-align: top;
+
+    i {
+      font-size: 28px;
+      color: #8c939d;
+    }
+
+    &:hover {
+      border-color: $--color-primary;
+      color: $--color-primary;
+    }
+  }
+  &:focus {
+    border-color: $--color-primary;
+    color: $--color-primary;
+
+    .el-upload-dragger {
+      border-color: $--color-primary;
+    }
+  }
+}
