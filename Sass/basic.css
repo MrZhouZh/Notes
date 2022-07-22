@@ -1,0 +1,67 @@
+.class1, .class2 {
+  border: 1px solid #ddd;
+}
+
+.class2 {
+  font-size: 12px;
+}
+
+div {
+  float: left;
+  　margin-left: 20px;
+}
+
+#navbar li {
+  border-top-left-radius: 10px;
+  -moz-border-radius-top-left: 10px;
+  -webkit-border-top-left-radius: 10px;
+}
+
+div {
+  background-color: #d6d65c;
+  color: #a3a329;
+}
+
+p {
+  border: 2px dotted;
+}
+
+.border-1 {
+  border: 1px solid blue;
+}
+
+.border-2 {
+  border: 2px solid blue;
+}
+
+.item-6 {
+  width: 12em;
+}
+
+.item-4 {
+  width: 8em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.tom {
+  background: #d6d65c;
+}
+
+.john {
+  background: #d6d65c;
+}
+
+.mason {
+  background: #d6d65c;
+}
+
+.simon {
+  background: #d6d65c;
+}
+
+#sidebar {
+  width: 10px;
+}
