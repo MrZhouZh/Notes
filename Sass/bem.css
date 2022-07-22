@@ -1,0 +1,52 @@
+.zk-upload {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  /* 照片墙模式 */
+}
+.zk-upload .zk-upload__input {
+  display: none;
+}
+
+.zk-upload .zk-upload__tip {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 7px;
+}
+
+.zk-upload iframe {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.zk-upload--picture-card {
+  background-color: #fbfdff;
+  border: 1px dashed #c0ccda;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+  cursor: pointer;
+  line-height: 146px;
+  vertical-align: top;
+}
+.zk-upload--picture-card i {
+  font-size: 28px;
+  color: #8c939d;
+}
+.zk-upload--picture-card:hover {
+  border-color: #f00;
+  color: #f00;
+}
+
+.zk-upload:focus {
+  border-color: #f00;
+  color: #f00;
+}
+.zk-upload:focus .el-upload-dragger {
+  border-color: #f00;
+}
