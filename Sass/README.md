@@ -4,6 +4,6 @@
 
 ## 目录
 
-- [基础用法](./docs/base.md)
+- [基础用法](./docs/basic.md)
 - [bem封装](./docs/bem.md)
 - [pc媒体查询](./docs/media.md)
