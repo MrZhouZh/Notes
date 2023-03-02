@@ -25,7 +25,7 @@ GET 请求 `/newcomertask/api/v1/action/query/task_chain` 接口
 - 本地路径: src/components/novicetask/mock/GET/task_chain.json
 
 - 本地启动真实路径为:
-  http://local.jd.co.th:3000/mock/novicetask/newcomertask/api/v1/action/query/task_chain
+  http://localhost:3000/mock/novicetask/newcomertask/api/v1/action/query/task_chain
 
 ## mock 文件配置规则
 
